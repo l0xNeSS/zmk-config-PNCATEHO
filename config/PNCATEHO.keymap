@@ -47,9 +47,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RCTRL &kp LWIN &kp LEFT_ARROW>,
+                <&kp LCTRL &kp LEFT_WIN &kp LEFT>,
                 <&macro_release>,
-                <&kp RCTRL &kp LWIN &kp LEFT>;
+                <&kp LCTRL &kp LEFT_WIN &kp LEFT>;
 
             label = "CTRL_WIN_L";
         };
