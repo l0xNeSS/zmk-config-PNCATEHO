@@ -31,7 +31,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_WIN &kp RIGHT>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
 
             label = "WIN_D_R";
         };
