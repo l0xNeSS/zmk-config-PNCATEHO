@@ -28,6 +28,11 @@
             bindings = <&ctrl_win_l>;
             key-positions = <2 7>;
         };
+
+        Test {
+            bindings = <&new_macro>;
+            key-positions = <7 6>;
+        };
     };
 
     macros {
@@ -54,6 +59,13 @@
 
             label = "CTRL_WIN_L";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_SHIFT) &kp LS(X) &kp N &kp J &kp SPACE &kp SQT &kp N &kp J &kp SPACE &kp P &kp F &kp SPACE &kp J &kp I &kp B &kp COMMA &kp R &kp F &kp COLON>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -61,9 +73,9 @@
 
         default_layer {
             bindings = <
-&kp A  &kp B  &kp C  &kp D
-&kp E  &kp F  &kp G  &kp H
-                     &lt 1 ESC  &lt 2 ENTER
+&kp A  &kp B  &ctrl_win_l  &Ctrl_win_r
+&kp E  &kp F  &kp G        &new_macro
+                           &lt 1 ESC    &lt 2 ENTER
             >;
         };
 
