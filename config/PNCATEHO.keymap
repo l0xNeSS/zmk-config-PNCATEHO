@@ -28,7 +28,11 @@
         Win_D_r: Win_D_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp D &kp RIGHT>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_WIN &kp RIGHT>,
+                <&macro_release>;
+
             label = "WIN_D_R";
         };
     };
