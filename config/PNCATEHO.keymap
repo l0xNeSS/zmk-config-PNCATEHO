@@ -18,14 +18,19 @@
     combos {
         compatible = "zmk,combos";
 
-        WiN_d_r {
-            bindings = <&Win_D_r>;
+        ctrl_win_r {
+            bindings = <&Ctrl_win_r>;
             key-positions = <6 3>;
+        };
+
+        ctrl_win_l {
+            bindings = <&ctrl_win_l>;
+            key-positions = <2 7>;
         };
     };
 
     macros {
-        Win_D_r: Win_D_r {
+        Ctrl_win_r: Win_D_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -35,6 +40,18 @@
                 <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
 
             label = "WIN_D_R";
+        };
+
+        ctrl_win_l: ctrl_win_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp LWIN &kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp RCTRL &kp LWIN &kp LEFT>;
+
+            label = "CTRL_WIN_L";
         };
     };
 
