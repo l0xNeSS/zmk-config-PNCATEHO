@@ -28,11 +28,6 @@
             bindings = <&ctrl_win_l>;
             key-positions = <2 7>;
         };
-
-        Test {
-            bindings = <&new_macro>;
-            key-positions = <7 6>;
-        };
     };
 
     macros {
