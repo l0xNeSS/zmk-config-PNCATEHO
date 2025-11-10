@@ -81,9 +81,9 @@
 
         lower_layer {
             bindings = <
-&none  &none  &none  &none
-&none  &none  &none  &none
-                     &trans  &trans
+&none           &none  &none  &none
+&start_notepad  &none  &none  &none
+                              &trans  &trans
             >;
         };
 
