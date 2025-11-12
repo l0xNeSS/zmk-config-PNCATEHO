@@ -28,6 +28,31 @@
             bindings = <&ctrl_win_l>;
             key-positions = <2 7>;
         };
+
+        previous_tab {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <0 1>;
+        };
+
+        next_tab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <3 2>;
+        };
+
+        close_the_tab {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 2>;
+        };
+
+        new_tab {
+            bindings = <&kp LC(T)>;
+            key-positions = <0 3>;
+        };
+
+        closed_tab {
+            bindings = <&kp LC(T)>;
+            key-positions = <3 2 0>;
+        };
     };
 
     macros {
@@ -66,6 +91,14 @@
 
             label = "START_NOTEPAD";
         };
+
+        alternate_windows: alternate_windows {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>;
+
+            label = "ALTERNATE_WINDOWS";
+        };
     };
 
     keymap {
@@ -73,9 +106,9 @@
 
         default_layer {
             bindings = <
-&kp LC(F4)  &kp LA(F4)  &ctrl_win_l  &Ctrl_win_r
-&kp LC(C)   &kp LC(V)   &kp G        &kp B
-                                     &lt 1 ESC    &lt 2 ENTER
+&none      &none      &ctrl_win_l  &Ctrl_win_r
+&kp LC(C)  &kp LC(V)  &kp G        &kp B
+                                   &lt 1 ESC    &lt 2 ENTER
             >;
         };
 
