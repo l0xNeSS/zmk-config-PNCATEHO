@@ -51,6 +51,11 @@
 
         closed_tab {
             bindings = <&kp LC(T)>;
+            key-positions = <3 0 1>;
+        };
+
+        end_tab {
+            bindings = <&kp LC(N9)>;
             key-positions = <3 2 0>;
         };
     };
