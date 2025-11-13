@@ -107,7 +107,7 @@
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp TAB>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 9999>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
