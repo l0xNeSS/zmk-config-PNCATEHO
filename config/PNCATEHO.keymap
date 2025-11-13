@@ -92,7 +92,9 @@
                 <&macro_press>,
                 <&kp LEFT_WIN &kp S>,
                 <&macro_release>,
-                <&kp LEFT_WIN &kp S &kp COMMA &kp K &kp J &kp R &kp Y &kp J &kp N &kp ENTER>;
+                <&kp LEFT_WIN &kp S>,
+                <&macro_tap>,
+                <&kp LT &kp K &kp J &kp R &kp Y &kp J &kp N &kp ENTER>;
 
             label = "START_NOTEPAD";
         };
@@ -106,7 +108,6 @@
                 <&macro_tap>,
                 <&kp TAB>,
                 <&macro_wait_time 1000>,
-                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
@@ -120,8 +121,8 @@
         default_layer {
             bindings = <
 &none      &none      &ctrl_win_l   &Ctrl_win_r
-&kp LC(C)  &kp LC(V)  &AltTabCycle  &kp B
-                                    &lt 1 ESC    &lt 2 ENTER
+&kp LC(C)  &kp LC(V)  &AltTabCycle  &start_notepad
+                                    &lt 1 ESC       &lt 2 ENTER
             >;
         };
 
