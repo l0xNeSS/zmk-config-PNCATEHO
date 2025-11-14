@@ -65,7 +65,7 @@
         };
 
         win_E {
-            bindings = <&kp E>;
+            bindings = <&kp LG(E)>;
             key-positions = <4 1>;
         };
     };
