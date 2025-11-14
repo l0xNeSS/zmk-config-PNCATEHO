@@ -58,6 +58,16 @@
             bindings = <&kp LC(N9)>;
             key-positions = <3 2 0>;
         };
+
+        win_R {
+            bindings = <&kp LG(R)>;
+            key-positions = <5 0>;
+        };
+
+        win_E {
+            bindings = <&kp E>;
+            key-positions = <4 1>;
+        };
     };
 
     macros {
@@ -97,21 +107,6 @@
                 <&kp LT &kp K &kp J &kp R &kp Y &kp J &kp N &kp ENTER>;
 
             label = "START_NOTEPAD";
-        };
-
-        AltTabCycle: alternate_windows {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_wait_time 9999>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "ALTERNATE_WINDOWS";
         };
     };
 
