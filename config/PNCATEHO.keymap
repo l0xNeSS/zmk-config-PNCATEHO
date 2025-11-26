@@ -115,9 +115,9 @@
 
         default_layer {
             bindings = <
-&none      &none      &ctrl_win_l  &Ctrl_win_r
-&kp LC(C)  &kp LC(V)  &kp F13      &start_notepad
-                                   &lt 1 ESC       &lt 2 ENTER
+&none        &none      &ctrl_win_l  &Ctrl_win_r
+&lt 4 LC(C)  &kp LC(V)  &kp F13      &start_notepad
+                                     &lt 1 ESC       &lt 2 ENTER
             >;
         };
 
@@ -142,6 +142,14 @@
 &bootloader  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &studio_unlock
 &bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2
                                                &none           &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp LG(E)  &trans  &trans
+&trans  &trans     &trans  &trans
+                           &trans  &trans
             >;
         };
     };
