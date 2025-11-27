@@ -147,9 +147,9 @@
 
         layer_4 {
             bindings = <
-&trans  &kp LG(E)  &trans  &trans
-&trans  &trans     &trans  &trans
-                           &trans  &trans
+&trans  &kp LG(E)  &kp LG(R)  &kp LG(I)
+&trans  &kp LG(V)  &kp LG(S)  &kp LG(L)
+                              &trans     &trans
             >;
         };
     };
