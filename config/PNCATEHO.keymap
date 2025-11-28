@@ -116,7 +116,7 @@
         default_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &none        &ctrl_win_l  &Ctrl_win_r
-&lt 4 LC(C)         &lt 5 LC(V)  &kp F13      &start_notepad
+&lt 4 LC(C)         &lt 5 LC(V)  &lt 5 F13    &start_notepad
                                               &lt 1 ESC       &lt 2 ENTER
             >;
         };
@@ -147,9 +147,9 @@
 
         WIn {
             bindings = <
-&trans  &kp LG(E)  &kp LG(R)  &kp LG(I)
-&trans  &kp LG(V)  &kp LG(S)  &kp LG(L)
-                              &trans     &trans
+&kp LS(LC(ESCAPE))  &kp LG(E)  &kp LG(R)  &kp LG(I)
+&trans              &kp LG(V)  &kp LG(S)  &kp LG(L)
+                                          &trans     &trans
             >;
         };
 
