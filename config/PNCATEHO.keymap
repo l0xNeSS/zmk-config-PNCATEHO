@@ -115,9 +115,9 @@
 
         default_layer {
             bindings = <
-&mt LS(LEFT_SHIFT) TAB  &none      &ctrl_win_l  &Ctrl_win_r
-&lt 4 LC(C)             &kp LC(V)  &kp F13      &start_notepad
-                                                &lt 1 ESC       &lt 2 ENTER
+&none        &none        &ctrl_win_l  &Ctrl_win_r
+&lt 4 LC(C)  &lt 5 LC(V)  &kp F13      &start_notepad
+                                       &lt 1 ESC       &lt 2 ENTER
             >;
         };
 
@@ -145,11 +145,19 @@
             >;
         };
 
-        layer_4 {
+        WIn {
             bindings = <
-&kt LC(LS(ESC))  &kp LG(E)  &kp LG(R)  &kp LG(I)
-&trans           &kp LG(V)  &kp LG(S)  &kp LG(L)
-                                       &trans     &trans
+&trans  &kp LG(E)  &kp LG(R)  &kp LG(I)
+&trans  &kp LG(V)  &kp LG(S)  &kp LG(L)
+                              &trans     &trans
+            >;
+        };
+
+        layer_Alt {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4
+&trans  &trans  &trans  &trans
+                        &trans  &trans
             >;
         };
     };
