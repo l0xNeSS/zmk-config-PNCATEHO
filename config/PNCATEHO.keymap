@@ -116,7 +116,7 @@
         default_layer {
             bindings = <
 &mt LEFT_SHIFT TAB  &none        &ctrl_win_l  &Ctrl_win_r
-&lt 4 LC(C)         &lt 5 LC(V)  &lt 5 F13    &start_notepad
+&lt 4 LC(C)         &lt 5 LC(V)  &lt 6 F13    &start_notepad
                                               &lt 1 ESC       &lt 2 ENTER
             >;
         };
@@ -155,9 +155,17 @@
 
         layer_Alt {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4
-&trans  &trans  &trans  &trans
-                        &trans  &trans
+&kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp LA(F4)
+&trans      &trans      &trans      &trans
+                                    &trans      &trans
+            >;
+        };
+
+        layer_Ctrl {
+            bindings = <
+&kp LC(F1)  &kp LC(F2)  &kt LC(F3)  &kt LC(F4)
+&trans      &trans      &trans      &trans
+                                    &trans      &trans
             >;
         };
     };
