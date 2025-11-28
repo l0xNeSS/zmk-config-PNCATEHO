@@ -163,7 +163,7 @@
 
         layer_Ctrl {
             bindings = <
-&kp LC(F1)  &kp LC(F2)  &kt LC(F3)  &kt LC(F4)
+&kp LC(F1)  &kp LC(F2)  &kp LC(F3)  &kp LC(F4)
 &trans      &trans      &trans      &trans
                                     &trans      &trans
             >;
